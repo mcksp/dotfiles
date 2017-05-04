@@ -2,6 +2,7 @@ colorscheme jellybeans
 set relativenumber 
 set shiftwidth=4
 set softtabstop=4 "number of spaces in tab when editing
+set tabstop=4
 set expandtab "tabs are spaces
 set autoindent
 set mouse=a
@@ -23,10 +24,10 @@ filetype indent on
 set showmode
 set showmatch
 
-
-
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 nnoremap j gj
 nnoremap k gk
 nnoremap gV `[v`]
+set listchars=eol:¬,tab:▶\ ,trail:␣
+nnoremap <F3> :set list!<CR>
