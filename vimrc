@@ -29,5 +29,7 @@ set pastetoggle=<F2>
 nnoremap j gj
 nnoremap k gk
 nnoremap gV `[v`]
-set listchars=eol:¬,tab:▶\ ,trail:␣
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬,
 nnoremap <F3> :set list!<CR>
+map <C-j> :cn<CR>
+map <C-k> :cp<CR>
