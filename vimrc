@@ -33,4 +33,5 @@ set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬,
 nnoremap <F3> :set list!<CR>
 nnoremap <C-j> :cn<CR>
 nnoremap <C-k> :cp<CR>
+nnoremap <C-b> :.w !bash<CR>
 set directory=$HOME/.vim/swapfiles//
