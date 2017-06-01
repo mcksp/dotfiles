@@ -23,6 +23,7 @@ filetype plugin on
 filetype indent on
 set showmode
 set showmatch
+set path+=**
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
@@ -35,3 +36,7 @@ nnoremap <C-j> :cn<CR>
 nnoremap <C-k> :cp<CR>
 nnoremap <C-b> :.w !bash<CR>
 set directory=$HOME/.vim/swapfiles//
+
+autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
+autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
+autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
