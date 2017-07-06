@@ -1,6 +1,7 @@
 colorscheme jellybeans
 set nocompatible
 set relativenumber 
+set autoread
 
 set shiftwidth=4
 set softtabstop=4 "number of spaces in tab when editing
