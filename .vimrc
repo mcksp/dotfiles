@@ -1,10 +1,13 @@
 colorscheme jellybeans
+set nocompatible
 set relativenumber 
+
 set shiftwidth=4
 set softtabstop=4 "number of spaces in tab when editing
 set tabstop=4
 set expandtab "tabs are spaces
 set autoindent
+autocmd Filetype go setlocal noexpandtab
 set mouse=a
 set guioptions+=a
 set number "show line numbers
