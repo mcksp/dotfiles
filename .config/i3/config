@@ -133,4 +133,7 @@ bar {
 bindsym $mod+Shift+s exec i3lock -c 000000
 exec_always feh --bg-scale ~/Photos/wallpaper.jpg
 
-bindsym Print exec scrot ~/Photos/screenshots/%Y-%m-%d-%T.png
+set $screenshotpath ~/Photos/screenshots/%Y-%m-%d-%T.png
+bindsym Print exec "scrot $screenshotpath"
+bindsym --release Shift+Print exec "scrot -s $screenshotpath"
+bindsym Control+Print exec "scrot -u $screenshotpath"
