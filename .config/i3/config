@@ -12,7 +12,18 @@ set $right l
 font pango:monospace 8
 
 # No window title
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 6
+
+set $focus  #d7d3bf
+set $nfocus #556573
+set $urgent #a52c4c
+
+# class                 border  backgr. text
+client.focused          $focus  $focus  #ffffff
+client.focused_inactive $nfocus $nfocus #ffffff
+client.unfocused        $nfocus $nfocus #888888
+client.urgent           $urgent $urgent #ffffff
+
 hide_edge_borders both
 
 
