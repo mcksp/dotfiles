@@ -28,6 +28,7 @@ filetype indent on
 set showmode
 set showmatch
 set path+=**
+set noeb vb t_vb=
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
