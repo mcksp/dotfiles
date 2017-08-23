@@ -142,11 +142,12 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3blocks
 }
 
 bindsym $mod+Shift+s exec i3lock -c 000000
 exec_always feh --bg-scale ~/Photos/wallpaper.jpg
+exec --no-startup-id ~/proj/pomidor/pomidor
 
 set $screenshotpath ~/Photos/screenshots/%Y-%m-%d-%T.png
 bindsym Print exec "scrot $screenshotpath"
@@ -155,5 +156,5 @@ bindsym Control+Print exec "scrot -u $screenshotpath"
 
 
 # volume control
-bindsym XF86AudioRaiseVolume exec "amixer -q set Master 3%+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q set Master 3%- unmute"
+bindsym XF86AudioRaiseVolume exec "amixer -q set Master 3%+ unmute; pkill -SIGRTMIN+1 i3blocks"
+bindsym XF86AudioLowerVolume exec "amixer -q set Master 3%- unmute; pkill -SIGRTMIN+1 i3blocks"
