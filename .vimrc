@@ -9,6 +9,7 @@ set tabstop=4
 set expandtab "tabs are spaces
 set autoindent
 autocmd Filetype go setlocal noexpandtab
+autocmd Filetype ruby setlocal softtabstop=2 shiftwidth=2 tabstop=2
 set mouse=a
 set guioptions+=a
 set number "show line numbers
@@ -45,3 +46,4 @@ set directory=$HOME/.vim/swapfiles//
 autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
 autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
+autocmd Filetype ruby nnoremap <F5> :w<CR>:w !ruby %<CR>
