@@ -10,7 +10,7 @@ set softtabstop=4 " number of spaces in tab when editing
 set expandtab " tabs are spaces
 set autoindent
 autocmd Filetype go setlocal noexpandtab
-autocmd Filetype ruby setlocal softtabstop=2 shiftwidth=2 tabstop=2
+autocmd Filetype ruby,eruby,yaml setlocal softtabstop=2 shiftwidth=2 tabstop=2
 set mouse=a
 set guioptions+=a
 set number " show line numbers
