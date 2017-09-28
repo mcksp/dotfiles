@@ -44,6 +44,12 @@ nnoremap <F3> :set list!<CR>
 nnoremap <C-n> :cn<CR>
 nnoremap <C-p> :cp<CR>
 
+" in visual mode
+" / will search only in selected text
+" * will search for selected text in whole file
+vnoremap / <Esc>/\%><C-R>=line("'<")-1<CR>l\%<<C-R>=line("'>")+1<CR>l
+vnoremap * y:let @/ = @"<CR>
+
 " execute this line in bash
 nnoremap <C-b> :.w !bash<CR>
 set directory=$HOME/.vim/swapfiles//
