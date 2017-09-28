@@ -48,6 +48,7 @@ nnoremap <C-p> :cp<CR>
 " / will search only in selected text
 " * will search for selected text in whole file
 vnoremap / <Esc>/\%><C-R>=line("'<")-1<CR>l\%<<C-R>=line("'>")+1<CR>l
+vnoremap ? <Esc>?\%><C-R>=line("'<")-1<CR>l\%<<C-R>=line("'>")+1<CR>l
 vnoremap * y:let @/ = @"<CR>
 
 " execute this line in bash
