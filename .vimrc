@@ -34,7 +34,7 @@ set noeb vb t_vb= " disable beeping
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 " jk goes to next visible line, not actual textfile line
-nnoremap j gj 
+nnoremap j gj
 nnoremap k gk
 " select recently pasted text
 nnoremap gV `[v`]
