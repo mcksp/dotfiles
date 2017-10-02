@@ -1,7 +1,14 @@
 colorscheme jellybeans
 set nocompatible
-set relativenumber
 set autoread
+
+if system('uname -s') == "Darwin\n"
+    " iterm sucks
+else
+    set relativenumber
+    set cursorline " highlight line with the cursor
+endif
+
 
 " 1 tab == 4 spaces
 set shiftwidth=4 " affects >> << == and automatic indentation
@@ -19,7 +26,6 @@ set laststatus=2 " always display status line
 set incsearch " search as characters are entered
 set hlsearch " highlight matches in search
 set ic " search case insensitive
-set cursorline " highlight line with the cursor
 set t_Co=256
 set scrolloff=5 " scroll offset, number of lines above and below the cursor
 syntax on
