@@ -17,7 +17,7 @@ set softtabstop=4 " number of spaces in tab when editing
 set expandtab " tabs are spaces
 set autoindent
 autocmd Filetype go setlocal noexpandtab
-autocmd Filetype ruby,eruby,yaml setlocal softtabstop=2 shiftwidth=2 tabstop=2
+autocmd Filetype ruby,eruby,yaml,css,scss,js setlocal softtabstop=2 shiftwidth=2 tabstop=2
 set ruler " display line and column number
 set backspace=2 "backspace acts like it should
 set mouse=a
