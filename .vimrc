@@ -70,19 +70,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-let g:netrw_banner=0
-let g:netrw_browse_split=4
-let g:netrw_altv=1
-let g:netrw_liststyle=3
-
 autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
 autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
 autocmd Filetype ruby nnoremap <F5> :w<CR>:w !ruby %<CR>
-
-" if no file specified, open file explorer in vertical split
-if argc() == 0
-    autocmd VimEnter * 30vs .
-endif
-
-set shell=/bin/bash
