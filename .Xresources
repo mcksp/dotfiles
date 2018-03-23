@@ -51,11 +51,4 @@
 *.color21:      base06
 
 UXTerm*faceName: Terminus
-! UXTerm*faceName: Source Code Pro Semibold
 UXTerm*faceSize: 10
-
-URxvt.font: xft:monospace:size=12
-URxvt.scrollBar: false
-
-URxvt.perl-ext-common: fullscreen
-URxvt.keysym.F11: perl:fullscreen:switch
