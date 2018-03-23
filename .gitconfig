@@ -1,0 +1,15 @@
+[user]
+	email = mac.spychala@gmail.com
+	name = maciejspychala
+[merge]
+	tool = vimdiff
+[core]
+	excludesfile = /Users/maciej/.gitignore
+[push]
+	default = current
+[difftool]
+	prompt = false
+[alias]
+	l = log -n 6 --oneline
+[mergetool]
+	keepBackup = false
