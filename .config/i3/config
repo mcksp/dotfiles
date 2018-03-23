@@ -7,10 +7,6 @@ set $down j
 set $up k
 set $right l
 
-
-gaps inner 5
-gaps outer 10
-
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:tewi 8
@@ -148,6 +144,7 @@ bar {
 bindsym $mod+Shift+s exec i3lock -c 000000
 exec_always feh --bg-scale ~/Photos/wallpaper.jpg
 exec --no-startup-id ~/proj/pomidor/pomidor
+exec --no-startup-id "redshift -O 4500K -b 0.8"
 
 set $screenshotpath ~/Photos/screenshots/%Y-%m-%d-%T.png
 bindsym Print exec "scrot $screenshotpath"
