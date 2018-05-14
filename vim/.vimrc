@@ -70,6 +70,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+nnoremap <F6> :!./%<CR>
 autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
 autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
