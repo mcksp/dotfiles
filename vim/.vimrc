@@ -75,4 +75,4 @@ autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
 autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
 autocmd Filetype ruby nnoremap <F5> :w<CR>:w !ruby %<CR>
-autocmd Filetype tex nnoremap <F5> :w<CR>:!pdflatex %<CR>
+autocmd Filetype tex nnoremap <F5> :w<CR>:!pdflatex %; pkill -HUP mupdf<CR>
