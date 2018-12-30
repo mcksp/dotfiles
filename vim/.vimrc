@@ -54,6 +54,8 @@ nnoremap <F3> :set list!<CR>
 nnoremap <C-n> :cn<CR>
 nnoremap <C-p> :cp<CR>
 
+nnoremap <C-d> :e %:h<CR>
+
 " in visual mode
 " / will search only in selected text
 " * will search for selected text in whole file
