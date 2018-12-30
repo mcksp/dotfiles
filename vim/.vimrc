@@ -75,6 +75,7 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <F6> :!./%<CR>
 autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
+autocmd Filetype haskell nnoremap <F5> :w<CR>:w !runghc %<CR>
 autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
 autocmd Filetype ruby nnoremap <F5> :w<CR>:w !ruby %<CR>
