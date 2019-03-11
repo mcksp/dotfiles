@@ -13,3 +13,7 @@
 	l = log -n 6 --oneline
 [mergetool]
 	keepBackup = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	verbose = true
