@@ -11,6 +11,8 @@
 	prompt = false
 [alias]
 	l = log -n 6 --oneline
+	s = status -s
+	squash = commit --amend --no-edit
 [mergetool]
 	keepBackup = false
 [url "git@github.com:"]

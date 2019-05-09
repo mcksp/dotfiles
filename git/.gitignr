@@ -1,1 +1,4 @@
 tags
+CMakeLists.txt
+cmake-build-debug/
+vendor/
