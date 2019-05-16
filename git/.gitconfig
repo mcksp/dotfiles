@@ -13,6 +13,7 @@
 	l = log -n 6 --oneline
 	s = status -s
 	squash = commit --amend --no-edit
+	p = add -p
 [mergetool]
 	keepBackup = false
 [url "git@github.com:"]
