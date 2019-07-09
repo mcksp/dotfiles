@@ -45,6 +45,7 @@ set showmatch " show matching bracket
 set path+=** " find method will lookup whole tree
 set noeb vb t_vb= " disable beeping
 let g:netrw_list_hide = '\.o$,\.obj$,'
+let g:netrw_banner = 0
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
