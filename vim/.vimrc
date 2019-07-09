@@ -83,10 +83,14 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+nnoremap <C-E> :Buffers<CR>
+nnoremap <C-F> :Files<CR>
+nnoremap <C-G> :BCommits<CR>
+
 nnoremap <F6> :!./%<CR>
 autocmd Filetype go nnoremap <F5> :w<CR>:w !go run %<CR>
 autocmd Filetype haskell nnoremap <F5> :w<CR>:w !runghc %<CR>
-autocmd Filetype python nnoremap <F5> :w<CR>:w !python %<CR>
+autocmd Filetype python nnoremap <F5> :w<CR>:w !python3 %<CR>
 autocmd Filetype c nnoremap <F5> :w<CR>:w !gcc -Wall -Wextra % && ./a.out<CR>
 autocmd Filetype ruby nnoremap <F5> :w<CR>:w !ruby %<CR>
-autocmd Filetype tex nnoremap <F5> :w<CR>:!pdflatex %; pkill -HUP mupdf<CR>
+autocmd Filetype tex nnoremap <F5> :w<CR>:!pdflatex main.tex; pkill -HUP mupdf<CR>
