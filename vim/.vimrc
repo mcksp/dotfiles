@@ -83,6 +83,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" open splits on right/below
+set splitright
+set splitbelow
+
 nnoremap <C-E> :Buffers<CR>
 nnoremap <C-F> :Files<CR>
 nnoremap <C-G> :BCommits<CR>
