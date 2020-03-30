@@ -21,9 +21,11 @@ ps1prompt() {
 PROMPT_COMMAND='ps1prompt'
 HISTCONTROL=ignoreboth
 HISTSIZE=5000
+export EDITOR=vim
+export VISUAL=vim
 set -o vi
 
-alias ls='ls -G'
+alias ls='ls --color'
 alias vimlast='vim `git diff-tree --no-commit-id --name-only -r HEAD`'
 alias master='git checkout master'
 alias kp='kill -9 `ps -e | fzf | awk '"'"'{print $1}'"'"'`'
@@ -36,6 +38,6 @@ repeat() {
     done
 }
 
-source /usr/local/etc/bash_completion.d/git-completion.bash
+source /usr/share/bash-completion/completions/git
 
 test -f ~/.bashrc_local && source ~/.bashrc_local
